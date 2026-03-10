@@ -73,7 +73,7 @@ body {
 }
 
 .section-title {
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -361,6 +361,14 @@ body {
     margin-top: 10px;
 }
 
+.trend-card__link {
+    color: #fff;
+    text-decoration: none;
+}
+.trend-card__link:hover {
+    color: #b59f5b;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -571,7 +579,19 @@ body {
     margin-bottom: 10px;
 }
 
+.tags-cloud__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 6px;
+    padding: 0;
+}
+
 .tags-cloud__item {
+    display: block;
+}
+
+.tags-cloud__link {
     display: inline-block;
     padding: 8px 14px;
     border: 3px solid #eeeeee;
@@ -582,9 +602,8 @@ body {
     font-weight: bold;
 }
 
-.tags-cloud__item:hover { 
-    border-color: #b59f5b; 
-    background-color: transparent;
+.tags-cloud__link:hover { 
+    border-color: #b59f5b;
 }
 
 /* topics */
@@ -622,7 +641,6 @@ body {
 
 /* shop */
 .shop {
-    background-color: #f9f9f9;
     padding: 60px 0;
 }
 
@@ -715,19 +733,32 @@ body {
 
 /* Footer */
 .footer {
+    padding: 0;
+}
+
+.footer__social-wrapper {
+    background-color: #f4f7f6;
     padding: 30px 0;
 }
 
-.social {
+.social-list {
     display: flex;
     justify-content: center;
+    align-items: center;
+    list-style: none;
     height: 83px;
     gap: 20px;
-    margin-bottom: 20px;
-    background-color: #f4f7f6;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-.social__link {
+.social-list__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.social-list__link {
     display: block;
     width: 24px;
     height: 24px;
@@ -736,18 +767,19 @@ body {
     background-position: center;
 }
 
-.social__link--dribbble { 
+.social-list__link--dribbble { 
     background-image: url('../svg/001-dribbble.svg'); 
 }
-.social__link--pinterest { 
+.social-list__link--pinterest { 
     background-image: url('../svg/001-pinterest.svg'); 
 }
-.social__link--tumblr { 
+.social-list__link--tumblr { 
     background-image: url('../svg/003-tumblr.svg'); 
 }
 
 .copyright { 
     text-align: center; 
+    padding: 30px 0;
 }
 
 .copyright__link {

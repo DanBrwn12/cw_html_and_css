@@ -10,7 +10,9 @@
     <header class="header">
         <div class="container header__container">
             <div class="logo">
-                <img src="svg/noemi-logo.svg" alt="NOEMI" class="logo__image">
+                <a href="index.html">
+                    <img src="svg/noemi-logo.svg" alt="NOEMI" class="logo__image">
+                </a>
             </div>
             
             <nav class="menu">
@@ -49,7 +51,9 @@
                         <li class="tags__item"><a href="#" class="tags__link">lifestyle</a></li>
                         <li class="tags__item"><a href="#" class="tags__link">interior</a></li>
                     </ul>
-                    <h3 class="trend-card__title">Сейчас в тренде: сад на подоконнике</h3>
+                    <h3 class="trend-card__title">
+                        <a href="#" class="trend-card__link">Сейчас в тренде: сад на подоконнике</a>
+                    </h3>
                 </div>
             </article>
             
@@ -58,7 +62,9 @@
                     <ul class="tags trend-card__tags">
                         <li class="tags__item"><a href="#" class="tags__link">food</a></li>
                     </ul>
-                    <h3 class="trend-card__title">Сыры на красивых картинках из интернета: какие они на вкус?</h3>
+                    <h3 class="trend-card__title">
+                        <a href="#" class="trend-card__link">Сыры на красивых картинках из интернета: какие они на вкус?</a>
+                    </h3>
                 </div>
             </article>
             
@@ -68,7 +74,9 @@
                         <li class="tags__item"><a href="#" class="tags__link">lifestyle</a></li>
                         <li class="tags__item"><a href="#" class="tags__link">travel</a></li>
                     </ul>
-                    <h3 class="trend-card__title">Собираемся в первый поход в горы</h3>
+                    <h3 class="trend-card__title">
+                        <a href="#" class="trend-card__link">Собираемся в первый поход в горы</a>
+                    </h3>
                 </div>
             </article>
             
@@ -78,12 +86,14 @@
                         <li class="tags__item"><a href="#" class="tags__link">food</a></li>
                         <li class="tags__item"><a href="#" class="tags__link">health</a></li>
                     </ul>
-                    <h3 class="trend-card__title">Сейчас в тренде: сколько витамина С в лимонах?</h3>
+                    <h3 class="trend-card__title">
+                        <a href="#" class="trend-card__link">Сейчас в тренде: сколько витамина С в лимонах?</a>
+                    </h3>
                 </div>
             </article>
         </div>
         <div class="container main__container">
-            <section class="posts">
+            <div class="posts">
                 <div class="posts-grid">
                     <article class="post">
                         <div class="post__image">
@@ -185,7 +195,7 @@
                         </div>
                     </article>
                 </div>
-            </section>
+            </div>
 
             <aside class="sidebar">
                 <section class="sidebar__section">
@@ -269,14 +279,16 @@
                 <section class="sidebar__section">
                     <h2 class="section-title">Теги</h2>
                     <div class="tags-cloud">
-                        <a href="#" class="tags-cloud__item">FASHION</a>
-                        <a href="#" class="tags-cloud__item">MUSIC</a>
-                        <a href="#" class="tags-cloud__item">LIFESTYLE</a>
-                        <a href="#" class="tags-cloud__item">ART</a>
-                        <a href="#" class="tags-cloud__item">INTERIOR</a>
-                        <a href="#" class="tags-cloud__item">TRAVEL</a>
-                        <a href="#" class="tags-cloud__item">FOOD</a>
-                        <a href="#" class="tags-cloud__item">HEALTH</a>
+                        <ul class="tags-cloud__list">
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">fashion</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">music</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">lifestyle</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">art</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">interior</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">travel</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">food</a></li>
+                            <li class="tags-cloud__item"><a href="#" class="tags-cloud__link">health</a></li>                         
+                        </ul> 
                     </div>
                 </section>
 
@@ -351,16 +363,27 @@
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="social">
-                <a href="#" class="social__link social__link--dribbble" aria-label="Dribbble"></a>
-                <a href="#" class="social__link social__link--pinterest" aria-label="Pinterest"></a>
-                <a href="#" class="social__link social__link--tumblr" aria-label="Tumblr"></a>
-            </div>
-            <div class="copyright">
-                <a href="#" class="copyright__link">Copyright © 2009–2019 City Blog LLC.</a>
+        <div class="footer__social-wrapper">
+            <div class="container">
+                <address class="social-address">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link social-list__link--dribbble" aria-label="Dribbble"></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link social-list__link--pinterest" aria-label="Pinterest"></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link social-list__link--tumblr" aria-label="Tumblr"></a>
+                        </li>
+                    </ul>  
+                </address>
             </div>
         </div>
+        
+        <div class="copyright">
+            <a href="#" class="copyright__link">Copyright © 2009–2019 City Blog LLC.</a>
+        </div>       
     </footer>
 
     <div class="popup _hidden">
